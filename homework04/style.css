@@ -1,0 +1,131 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "GilroyMedium";
+    src: url("fonts/GilroyMedium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GilroySemiBold";
+    src: url("fonts/GilroySemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "GilroyBold";
+    src: url("fonts/GilroyBold.ttf") format("truetype");
+}
+
+.center {
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
+}
+
+.header {
+    padding-top: 51px;
+    padding-bottom: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_menu {
+    color: #000;
+    font-family: GilroyMedium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+    width: 533px;
+}
+
+.header_menu a:visited {
+    color: #000;
+}
+
+.header_menu__home {
+    color: #F25822;
+    font-family: GilroySemiBold;
+}
+
+.top {
+    padding-top: 45px;
+    padding-bottom: 162px;
+    display: flex;
+    gap: 40px;
+}
+
+.top_content {
+    width: 522px;
+}
+
+.top_content_h1 {
+    margin-bottom: 17px;
+    color: #000;
+    font-family: GilroyBold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top_content_p {
+    margin-bottom: 37px;
+    color: #888;
+    font-family: GilroyMedium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top_content__buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 72px;
+    align-items: center;
+}
+
+.top_content__button {
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: none;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+    font-family: GilroyBold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: auto;
+}
+
+.top_content__txt_video_link {
+    color: #AAA;
+    font-family: GilroyBold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top_logo {
+    padding-top: 97px;
+    padding-bottom: 97px;
+    padding-left: calc(50% - 615px);
+    padding-right: calc(50% - 585px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_logo__img {
+    width: 160px;
+    height: 50px;
+    flex-shrink: 0;
+}

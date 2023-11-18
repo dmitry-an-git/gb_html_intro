@@ -1,0 +1,52 @@
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 128px;
+}
+
+.item {
+    border: solid #000;
+    min-height: 200px;
+}
+
+.item1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.box {
+    position: relative;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    justify-content: center;
+
+}
+
+.elem {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+}
+
+.elem1 {
+    background-color: #05510e;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.elem2 {
+    background-color: #089619;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+
+.elem3 {
+    background-color: #11f32c;
+    top: 100px;
+    left: 100px;
+    z-index: 0;
+}
