@@ -44,10 +44,6 @@
     width: 533px;
 }
 
-.header_menu a:visited {
-    color: #000;
-}
-
 .header_menu__home {
     color: #F25822;
     font-family: GilroySemiBold;
