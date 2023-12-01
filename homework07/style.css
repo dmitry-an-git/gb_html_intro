@@ -37,36 +37,29 @@
     padding-right: 10px;
     display: flex;
     align-items: flex-end;
+    gap: 32px;
 }
 
 .banner {
     background-color: #F1E4E6;
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.banner_dude {
+.banner img {
     margin-left: -230px;
     height: 764px;
 }
 
-.banner_moto {
+.banner_motto {
     border-left: 12pt solid #F16D7F;
     padding-left: 16pt;
-    margin-top: 290px;
     margin-left: 64px;
-    display: flex;
-    align-items: center;
+    margin-bottom: 45px;
 }
 
-/* .banner_moto__rectangle {
-    height: 92px;
-    width: 12px;
-    background-color: #F16D7F;
-    margin-right: 16px;
-} */
-
-.banner_moto__text h1 {
+.banner_motto h1 {
     color: #222;
     font-family: 'Lato', sans-serif;
     font-size: 48px;
@@ -75,7 +68,7 @@
     line-height: normal;
 }
 
-.banner_moto__text h2 {
+.banner_motto h2 {
     color: #222;
     font-family: 'Lato', sans-serif;
     font-size: 32px;
@@ -99,7 +92,6 @@
 
 .offers_cell {
     position: relative;
-    /* height: 260px; */
     width: 100%;
     background: rgba(33, 22, 22, 0.70);
     display: flex;
@@ -112,13 +104,11 @@
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
-    /* height: 180px; */
     width: 100%;
 }
 
 .offers_cell img {
     width: 100%;
-    /* position: relative; */
     z-index: -1;
 }
 
@@ -128,7 +118,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgba(33, 22, 22, 0.70); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,7 +175,7 @@
     grid-template-columns: repeat(auto-fit, 360px);
     /* grid-template-columns: repeat(3, 360px); */
     gap: 30px;
-    /* margin-bottom: 48px; */
+    margin-bottom: 48px;
 }
 
 .featured_cell {
@@ -194,13 +183,15 @@
     flex-direction: column;
 }
 
+.featured_cell img {
+    width: auto;
+}
+
 .featured_cell__text {
     padding: 24px 16px;
-    width: calc(100% - 16px - 16px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     gap: 16px;
     background: #F8F8F8;
 }
@@ -238,8 +229,7 @@
 }
 
 .featured_button button {
-    margin: 48px auto 65px auto;
-    /* text-align: center; */
+    margin: 0 auto 0 auto;
     padding: 15px 39px;
     border: 1px solid #FF6A6A;
     background-color: white;
@@ -249,4 +239,113 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+@media(max-width: 1140px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .offers {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+        padding-bottom: 110px;
+    }
+
+    .featured_cell img {
+        width: 100%
+    }
+
+    .featured_grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+}
+
+@media(max-width: 1024px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        padding-bottom: 18px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header_right {
+        gap: 0px;
+    }
+
+    .user_icon {
+        padding-left: 25px;
+        padding-right: 42px;
+    }
+
+    .banner img {
+        margin-left: -16px;
+        width: 50%;
+        height: auto;
+    }
+
+    .banner_motto {
+        margin-left: 29px;
+        margin-bottom: 0px;
+    }
+
+    .banner_motto h1 {
+        font-size: 44px;
+    }
+
+    .banner_motto h2 {
+        font-size: 24px;
+    }
+
+    .offers {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+        padding-bottom: 110px;
+    }
+
+    .featured {
+        padding-bottom: 70px;
+    }
+
+    .featured_cell img {
+        width: 100%
+    }
+
+    .featured_header {
+        margin-bottom: 74px;
+    }
+
+    .featured_header h1 {
+        margin-bottom: 3px;
+    }
+
+    .featured_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .featured_cell__text {
+        gap: 12px;
+    }
+
+    .featured_cell p {
+        margin-bottom: 6px;
+    }
+
+    .featured_button button {
+        margin: 0 auto;
+    }
+
 }
