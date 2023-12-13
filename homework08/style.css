@@ -408,7 +408,7 @@
     }
 }
 
-@media(max-width: 670px) {
+@media(max-width: 670epx) {
 
     .header_right {
         gap: 0px;
